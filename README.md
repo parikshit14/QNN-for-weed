@@ -10,9 +10,9 @@ Quantization on weed detection with PyTorch on deepweeds dataset for performance
 Download and place the image and lables from the deepweeds dataset into `prepare_data/deepweeds/` and execute the **train_model.py** file. [dataset-github-repo](https://github.com/AlexOlsen/DeepWeeds)
 
 ## Inference on the model:
-Download the trained models from the Google-Drive [link](https://drive.google.com/drive/folders/1QDujacI3uPdzVHRBGf9bZKWJjA_3DlnF?usp=share_link) [request access with purpose of access] and place them in `models/` and execute the **inference.py** file.
+Download the trained models from the Google-Drive [link](https://drive.google.com/drive/folders/1QDujacI3uPdzVHRBGf9bZKWJjA_3DlnF?usp=sharing) and place them in `models/` and execute the **inference.py** file.
 
-# Hardware testing
+## Hardware testing
 1. Android:
 Tested on android device using Android Debug Bridge which enable the use of mobile processor (present on your debug device) without the need to build an actual application. However, few extra steps are needed to convert the current trained models [ref](https://pytorch.org/tutorials/recipes/mobile_perf.html) .
 
@@ -62,3 +62,16 @@ Since RPi is ARM based, few instrutions are specific for this family of architec
 
 3. PC:
 No extra updates needed, run the code present in inference on your hardware.
+
+## Citation
+If QWID helps your research, we appreciate your citations. Here is the BibTeX entry:
+```
+@misc{rathore2023qwid,
+      title={QWID: Quantized Weed Identification Deep neural network},
+      author={Parikshit Singh Rathore},
+      year={2023},
+      eprint={2310.18921},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
